@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-weight: 300;
+  color: #7d7987;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+nav,
+.logo-container,
+.nav-links,
+.banner,
+.banner-link,
+.banner-image-container,
+.services-body,
+.service,
+.btn-outline,
+.healthcare,
+.download,
+.testimonials-body,
+.user-data,
+.controls,
+.indicators,
+.about-body,
+.footer-body,
+.footer-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.banner-link,
+.banner-image-container,
+.services-body,
+.service,
+.btn-outline,
+.indicators,
+.about-body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo-text,
+.service-title {
+  font-size: 24px;
+}
+
+.btn-outline {
+  width: 200px;
+  height: 60px;
+  border: 1px solid #458ff6;
+  color: #458ff6;
+  border-radius: 30px;
+}
+
+.underline {
+  display: block;
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+}
+
+.banner,
+.services-body,
+.healthcare,
+.testimonials,
+.testimonials-content,
+.about,
+.page-footer {
+  position: relative;
+}
+
+.banner-dots,
+.services-dots,
+.healthcare-dots,
+.testimonials-dots-top,
+.testimonials-dots-bottom,
+.about-dots-top,
+.footer-dots-top,
+.footer-dots-bottom {
+  position: absolute;
+}
+
+.banner-dots,
+.services-dots,
+.about-dots-top,
+.footer-dots-top {
+  z-index: -1;
+}
+
+.banner-description,
+.article-title {
+  font-size: 21px;
+}
+
+.banner,
+.healthcare,
+.download {
+  max-width: 90%;
+}
+
+.banner-title,
+.services-title,
+.service-title,
+.healthcare-title,
+.about-title {
+  line-height: 56px;
+}
+
+.banner,
+.healthcare,
+.download,
+.testimonials,
+.testimonials-content,
+.testimonials-body,
+.controls,
+.footer-body {
+  margin: 0 auto;
+}
+
+nav,
+.banner-image,
+.service-img,
+.healthcare-img,
+.download-img,
+.article-img-top {
+  width: 100%;
+}
+
+.banner-link,
+.testimonials-title,
+.username,
+.jobtitle,
+.footer-body,
+.company-description,
+.copyright,
+.footer-links > li > a {
+  color: #fff;
+}
+
+.services-title,
+.healthcare-title,
+.download-title,
+.testimonials-title,
+.about-title {
+  font-size: 36px;
+}
+
+nav {
+  position: fixed;
+  padding: 2rem 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(46, 61, 73, 0.1);
+          box-shadow: 0px 5px 15px 0px rgba(46, 61, 73, 0.1);
+  z-index: 100;
+}
+
+nav .logo-container .logo {
+  margin-right: 0.75rem;
+}
+
+nav .logo-container .logo-text {
+  color: #233348;
+}
+
+nav .nav-links li {
+  margin-right: 2.5rem;
+}
+
+nav .nav-links li a {
+  color: #1f1534;
+}
+
+nav .burger {
+  display: none;
+}
+
+nav .burger .line {
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: #000;
+}
+
+nav .burger #line2 {
+  margin: 5px 0;
+}
+
+.banner {
+  height: 100vh;
+}
+
+.banner span {
+  overflow: hidden;
+}
+
+.banner span .banner-dots {
+  top: 20%;
+  left: -6.5%;
+}
+
+.banner .banner-typography {
+  max-width: 28.125rem;
+}
+
+.banner .banner-typography .banner-title {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.banner .banner-typography .banner-description {
+  line-height: 32px;
+  margin-bottom: 45px;
+}
+
+.banner .banner-typography .banner-link {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  border-radius: 60px;
+  background-color: #458ff6;
+}
+
+.banner .banner-image-container {
+  max-width: 43.75rem;
+}
+
+.services {
+  margin-top: 11.875rem;
+  background-image: url(../assests/Vector.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.services .services-header {
+  text-align: center;
+}
+
+.services .services-header .underline {
+  margin: 26px auto 33px auto;
+}
+
+.services .services-header .services-description {
+  max-width: 86ch;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 0 auto 5rem auto;
+}
+
+.services .services-body {
+  max-width: 1500px;
+  margin: 0 auto 4.375rem auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2.125rem;
+}
+
+.services .services-body .services-dots {
+  top: 39%;
+  right: 10%;
+}
+
+.services .services-body .service {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 350px;
+  height: 355px;
+  padding-left: 2.5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+.services .services-body .service .service-header .service-img {
+  height: 90px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services .services-body .service .service-body .service-title {
+  font-weight: 700;
+  margin: 22.5px 0 1px 0;
+}
+
+.services .services-body .service .service-body .service-description {
+  max-width: 26ch;
+  line-height: 28px;
+}
+
+.services .services-body .service .service-body #first-description,
+.services .services-body .service .service-body #last-description {
+  max-width: 28ch;
+}
+
+.services .btn-outline {
+  margin: 0 auto;
+}
+
+.healthcare {
+  overflow: hidden;
+  margin-top: 13.75rem;
+  padding-bottom: 14.375rem;
+}
+
+.healthcare .healthcare-img-container {
+  max-width: 40.625rem;
+}
+
+.healthcare .health-care-typography {
+  max-width: 30.375rem;
+}
+
+.healthcare .health-care-typography .underline {
+  margin: 25px 0 30px 0;
+}
+
+.healthcare .health-care-typography .healthcare-description {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 37px;
+}
+
+.healthcare span .healthcare-dots {
+  top: 65%;
+  left: 95%;
+}
+
+.download .download-typography {
+  max-width: 26.25rem;
+}
+
+.download .download-typography .download-title {
+  line-height: 48px;
+}
+
+.download .download-typography .underline {
+  margin: 1.875rem 0;
+}
+
+.download .download-typography .download-description {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 2.5rem;
+}
+
+.download .download-img-container {
+  max-width: 41.5625;
+}
+
+.testimonials {
+  overflow: hidden;
+  max-width: 76.25rem;
+  margin-top: 15.625rem;
+}
+
+.testimonials .testimonials-content {
+  overflow: hidden;
+  width: 90%;
+  background-image: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 25px;
+  z-index: 2;
+}
+
+.testimonials .testimonials-content span {
+  overflow: hidden;
+}
+
+.testimonials .testimonials-content span .testimonials-dots-top {
+  top: -15px;
+  right: -45px;
+}
+
+.testimonials .testimonials-content .testimonials-header .testimonials-title {
+  margin: 65px 0 25px 0;
+  text-align: center;
+  line-height: 48px;
+}
+
+.testimonials .testimonials-content .testimonials-header .underline {
+  margin: 0 auto;
+  margin-bottom: 65px;
+  background-color: #fff;
+}
+
+.testimonials .testimonials-content .testimonials-body {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 885px;
+  margin-bottom: 80px;
+}
+
+.testimonials .testimonials-content .testimonials-body .user-data {
+  max-width: 355px;
+}
+
+.testimonials .testimonials-content .testimonials-body .user-data .user-image {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.testimonials .testimonials-content .testimonials-body .user-data .user-info {
+  padding-left: 2rem;
+}
+
+.testimonials .testimonials-content .testimonials-body .user-data .user-info .username {
+  font-size: 22px;
+  line-height: 48px;
+}
+
+.testimonials .testimonials-content .testimonials-body .user-data .user-info .jobtitle {
+  font-size: 18px;
+}
+
+.testimonials .testimonials-content .testimonials-body .user-review .review {
+  max-width: 37ch;
+  font-size: 19px;
+  line-height: 30px;
+  color: white;
+}
+
+.testimonials .controls {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  max-width: 340px;
+  margin-top: 40px;
+}
+
+.testimonials .controls span {
+  font-size: 25px;
+  font-weight: 700;
+  color: #458ff6;
+}
+
+.testimonials .controls .indicators .circle:first-of-type {
+  opacity: 1;
+}
+
+.testimonials .controls .indicators .circle:last-of-type {
+  margin-right: 0;
+}
+
+.testimonials .controls .indicators .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 18px;
+  background-color: #5b9bf3;
+  opacity: 0.3;
+}
+
+.testimonials span .testimonials-dots-bottom {
+  top: 60%;
+  left: 10px;
+  z-index: 1;
+}
+
+.about {
+  margin-top: 220px;
+  background-image: url(../assests/Vector2.svg);
+  background-position: right 35%;
+  background-repeat: no-repeat;
+}
+
+.about .about-header .about-title {
+  text-align: center;
+}
+
+.about .about-header .underline {
+  margin: 25px auto 80px auto;
+}
+
+.about span .about-dots-top {
+  top: 14%;
+  left: 10%;
+}
+
+.about .about-body {
+  gap: 2.1875rem;
+}
+
+.about .about-body .about-article {
+  width: 350px;
+  height: 515px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+.about .about-body .about-article .article-header .article-img-top {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.about .about-body .about-article .article-body {
+  padding: 25px 50px 35px 30px;
+}
+
+.about .about-body .about-article .article-body .article-title {
+  line-height: 32px;
+}
+
+.about .about-body .about-article .article-body .article-description {
+  margin: 12px 0 25px 0;
+  line-height: 28px;
+}
+
+.about .about-body .about-article .article-body .aritcle-link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #4089ed;
+}
+
+.about .btn-outline {
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.page-footer {
+  margin-top: 200px;
+  background-image: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+
+.page-footer span .footer-dots-top {
+  right: 5%;
+  top: -17%;
+}
+
+.page-footer .footer-body {
+  max-width: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.page-footer .footer-body .company-info {
+  padding: 115px 0 115px 0;
+}
+
+.page-footer .footer-body .company-info .footer-logo-container {
+  width: 10rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.page-footer .footer-body .company-info .footer-logo-container .footer-logo-text {
+  margin-left: 12px;
+}
+
+.page-footer .footer-body .company-info .company-description {
+  max-width: 35ch;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 17px 0 31px 0;
+}
+
+.page-footer .footer-body .company-info .copyright {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.page-footer span .footer-dots-bottom {
+  top: 75%;
+  left: -1%;
+}
+
+.links-title {
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.footer-links li a {
+  line-height: 38px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 980px) {
+  .nav-links,
+  .banner,
+  .banner-link,
+  .banner-image-container,
+  .services-body,
+  .service,
+  .healthcare,
+  .download,
+  .testimonials-body,
+  .about-body,
+  .footer-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  nav .nav-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 22%);
+            transform: translate(-50%, 22%);
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    height: auto;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+    z-index: -1;
+  }
+  nav .nav-links li {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  nav .nav-links li a {
+    display: block;
+  }
+  nav .burger {
+    cursor: pointer;
+    display: block;
+  }
+  nav .burger .line {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .review {
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  .page-footer .footer-body {
+    padding-bottom: 50px;
+  }
+  .page-footer .footer-body .company-info {
+    padding: 115px 0 25px 0;
+  }
+  .links-title {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  .footer-links li {
+    text-align: center;
+  }
+  .dots {
+    display: none;
+  }
+}
+
+.opened .nav-links {
+  max-height: 240px;
+}
+
+.toggle #line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+          transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle #line2 {
+  opacity: 0;
+}
+
+.toggle #line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+          transform: rotate(45deg) translate(-5px, -5px);
+}
+/*# sourceMappingURL=style.css.map */
